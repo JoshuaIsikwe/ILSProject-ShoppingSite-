@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit|Roboto&display=swap");
+
+/*CORE STYLES*/
+
+body {
+  margin: 0;
+  font-family: "Kanit";
+  background: #222222;
+  color: #f2b807;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+  font-weight: bolder;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+  font-weight: lighter;
+}
+.btn {
+  display: inline-block;
+  background: #f2b807;
+  color: #222222;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #f2cb07;
+  margin-right: 0.5em 0;
+}
+
+a.social {
+  color: #f2b807;
+}
+
+.btn:hover {
+  background: #222222;
+  color: #f2b807;
+}
+
+/*HEADER CAROUSEL*/
+
+#carousel {
+  min-height: 450px;
+  color: #f2b807;
+  text-align: center;
+}
+
+#carousel .bg-img {
+  position: absolute;
+  background: #222222 url(./images/warriorEnergy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#carousel h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#carousel .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+/*SECTION A*/
+
+#section-a {
+  background: whitesmoke;
+  color: #222222;
+  padding-bottom: 2em;
+}
+
+/*SECTION B*/
+
+#section-b {
+  padding: 2em 1em 1em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #eaeaea;
+  color: #222222;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/*SECTION C*/
+
+#section-c {
+  background: #eaeaea;
+  color: #222222;
+  padding: 2em;
+}
+
+/*SECTION D*/
+#section-d .box {
+  padding: 2em;
+  color: #eaeaea;
+}
+
+#section-d .box:first-child {
+  background: #f2b807;
+  color: #222222;
+}
+
+/*FOOTER*/
+
+#main-footer {
+  padding: 2em;
+  background: #f2b807;
+  color: #222222;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*MEDIA QUERIES(for responsive design)*/
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p {
+    padding: 0;
+    text-align: justify;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+}
