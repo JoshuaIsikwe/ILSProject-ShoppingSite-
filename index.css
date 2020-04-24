@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Kanit|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:&display=swap");
 
 /*CORE STYLES*/
 
 body {
   margin: 0;
-  font-family: "Kanit";
-  background: #222222;
+  font-family: "Montserrat", sans-serif;
+  background: whitesmoke;
   color: #f2b807;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.8;
   text-align: center;
 }
 
@@ -23,31 +23,44 @@ h2,
 h3 {
   margin: 0;
   padding: 1em 0;
-  font-weight: bolder;
+  padding-bottom: 12px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #111111;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 p {
   margin: 0;
   padding: 1em 0;
+  padding-top: 0px;
   font-weight: lighter;
+  font-size: 18px;
+  letter-spacing: 4px;
 }
 .btn {
   display: inline-block;
-  background: #f2b807;
-  color: #222222;
+  background: transparent;
+  color: #0d0d0d;
   text-decoration: none;
-  padding: 1em 2em;
-  border: 1px solid #f2cb07;
+  font-weight: 400;
+  padding: 40px 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #0d0d0d;
   margin-right: 0.5em 0;
+  letter-spacing: 2px;
 }
 
 a.social {
   color: #f2b807;
+  font-size: 48px;
 }
 
 .btn:hover {
-  background: #222222;
-  color: #f2b807;
+  background: #0d0d0d;
+  color: #eaeaea;
 }
 
 /*HEADER CAROUSEL*/
@@ -61,18 +74,33 @@ a.social {
 #carousel .bg-img {
   position: absolute;
   background: #222222 url(./images/warriorEnergy.jpg);
-  background-position: center;
+  background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 450px;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 #carousel h1 {
-  padding-top: 100px;
-  padding-bottom: 0;
+  padding-top: 180px;
+  padding-bottom: 0px;
+  font-weight: bolder;
+  text-shadow: none;
+  font-size: 42px;
+  color: #0d0d0d;
+  letter-spacing: 8px;
+  text-shadow: -1px -1px 0 #f2b807, 1px -1px 0 #f2b807, -1px 1px 0 #f2b807,
+    1px 1px 0 #f2b807;
+}
+
+#carousel p {
+  padding-top: 0px;
+  padding-bottom: 72px;
+  color: #0d0d0d;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 #carousel .content-wrap,
@@ -80,12 +108,28 @@ a.social {
   padding: 0 1.5em;
 }
 
+#carousel .btn {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #f2b807;
+}
+
+#carousel .btn:hover {
+  background: #0d0d0d;
+  border-color: #f2b807;
+  color: #f2b807;
+}
+
 /*SECTION A*/
 
 #section-a {
   background: whitesmoke;
-  color: #222222;
-  padding-bottom: 2em;
+  color: #0d0d0d;
+  padding-bottom: 0px;
+  padding-top: 10px;
 }
 
 /*SECTION B*/
@@ -102,31 +146,52 @@ a.social {
 
 #section-b li {
   margin-bottom: 1em;
-  background: #eaeaea;
-  color: #222222;
+  background: #f2b807;
+  color: #0d0d0d;
 }
 
 .card-content {
-  padding: 1.5em;
+  padding: 24px;
+}
+
+.content-title {
+  color: #0d0d0d;
+  padding: 0;
 }
 
 /*SECTION C*/
 
 #section-c {
-  background: #eaeaea;
-  color: #222222;
+  background: #0d0d0d;
+  color: whitesmoke;
   padding: 2em;
+}
+
+#section-c .content-title {
+  color: whitesmoke;
 }
 
 /*SECTION D*/
 #section-d .box {
   padding: 2em;
-  color: #eaeaea;
+  color: #0d0d0d;
 }
 
-#section-d .box:first-child {
+#section-d .box:last-child {
+  background: #0d0d0d;
+  color: whitesmoke;
+}
+
+#section-d .box:last-child .btn {
+  background: transparent;
+  color: whitesmoke;
+  border-color: white;
+}
+
+#section-d .box:last-child .btn:hover {
   background: #f2b807;
-  color: #222222;
+  color: #0d0d0d;
+  border: none;
 }
 
 /*FOOTER*/
@@ -134,9 +199,10 @@ a.social {
 #main-footer {
   padding: 2em;
   background: #f2b807;
-  color: #222222;
+  color: #0d0d0d;
   text-align: center;
-  font-weight: bold;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 /*MEDIA QUERIES(for responsive design)*/
