@@ -19,18 +19,14 @@ nav {
   align-items: center;
   min-height: 8vh;
   font-family: "Poppins", sans-serif;
-}
-.logo {
-  color: rgb(226, 226, 226);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 15px;
+  background-color: #222222;
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
-  width: 40%;
+  justify-content: flex-end;
+  width: 70%;
+  height: 40px;
 }
 .nav-links li {
   list-style: none;
@@ -41,14 +37,50 @@ nav {
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 12px;
+  padding: 5px;
 }
 
 .nav-links a:hover {
   background-color: #111;
   font-size: 10px;
 }
-.nav-links a .fa-search {
-  font-size: 10px;
+
+.search-box {
+  background: #222222;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+  transition: 0.8s;
+}
+
+.search-btn {
+  color: black;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
 }
 /*Navigation Bar*/
 img {
@@ -122,7 +154,8 @@ a.social {
 
 /*SECTION A*/
 
-#section-a {
+#section-a,
+#section-Sa {
   background: whitesmoke;
   color: #222222;
   padding-bottom: 2em;
@@ -140,7 +173,8 @@ a.social {
   padding: 0;
 }
 
-#section-b li {
+#section-b li,
+#section-Sb li {
   margin-bottom: 1em;
   background: #eaeaea;
   color: #222222;
@@ -198,7 +232,8 @@ a.social {
   }
 
   .content-wrap,
-  #section-b ul {
+  #section-b ul,
+  #section-Sb ul {
     grid-column: 2/4;
   }
 
@@ -207,7 +242,8 @@ a.social {
     grid-column: span 2;
   }
 
-  #section-b ul {
+  #section-b ul,
+  #section-Sb ul {
     display: flex;
     justify-content: space-around;
   }
@@ -215,4 +251,60 @@ a.social {
   #section-b li {
     width: 31%;
   }
+}
+
+/*Shop Now*/
+
+#shopNow-carousel {
+  min-height: 300px;
+  color: #f2b807;
+  outline: black;
+  width: 100%;
+  background-color: white;
+}
+
+#shopNow-carousel .shop-img {
+  position: absolute;
+  background: url(/images/Elter\Ego\Logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  opacity: 0.7;
+}
+#shopNow-carousel h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+#shopNow-carousel .content-wrap {
+  padding: 0 1.5em;
+}
+
+/*Section Sb*/
+#section-Sb ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+#section-Sb li {
+  width: 600px;
+}
+
+.tee-btn,
+.hat-btn,
+.swim-btn {
+  display: block;
+  font-size: 30px;
+  width: 100%;
+  background-color: #f2b807;
+  border: solid#f2b807;
+  outline: #f2b807;
+}
+
+button:hover {
+  color: #f2b807;
+  background-color: #222222;
 }

@@ -24,28 +24,34 @@
 
   <body>
     <nav>
-      <div class="logo">
-        <h4>The Nav</h4>
-      </div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="/Shop-now.html">Shop Now</a></li>
         <li><a href="/Elter-news.html">Elter News</a></li>
         <li><a href="/about.html">About Us</a></li>
         <li><a href="/contact.html">Contact Us</a></li>
-        <li class="active">
-          <i class="fas fa-search"></i>
-          <a href="/Shop Now.html"><i class="fas fa-shopping-cart"></i></a>
+        <div class="search-box">
+          <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="What are you looking for?"
+          />
+          <a class="search-btn" href="#"> <i class="fas fa-search"></i></a>
+        </div>
+        <li>
+          <a href="/Shop-now.html"><i class="fas fa-shopping-cart"></i></a>
         </li>
       </ul>
     </nav>
+
     <!--Header Carousel-->
     <header id="carousel" class="grid">
       <div class="bg-img"></div>
       <div class="content-wrap">
         <h1>ELTER EGO</h1>
         <p>Check what we have in store</p>
-        <a href="/Shop Now.html" class="btn">Shop Now</a>
+        <a href="/Shop-now.html" class="btn">Shop Now</a>
       </div>
     </header>
 
@@ -127,7 +133,7 @@
             soluta saepe voluptatum id alias excepturi! Amet dolores libero ex
             quidem.
           </p>
-          <a href="#" class="btn">See More</a>
+          <a href="/Elter-news.html" class="btn">See More</a>
         </div>
 
         <div class="box">
@@ -138,7 +144,7 @@
             velit molestiae nobis quae earum fugit quibusdam, est nihil ad
             quisquam!
           </p>
-          <a href="#" class="btn">See More</a>
+          <a href="/Elter-news.html" class="btn">See More</a>
         </div>
       </section>
     </main>
