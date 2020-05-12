@@ -15,7 +15,7 @@ body {
 /*Navigation Bar*/
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   font-family: "Poppins", sans-serif;
@@ -28,7 +28,8 @@ nav {
   width: 70%;
   height: 40px;
 }
-.nav-links li {
+.nav-links li,
+.login-btn li {
   list-style: none;
 }
 .nav-links a {
@@ -40,7 +41,8 @@ nav {
   padding: 5px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.login-btn a:hover {
   background-color: #111;
   font-size: 10px;
 }
@@ -81,6 +83,15 @@ nav {
   transition: 0.4s;
   line-height: 40px;
   width: 0px;
+}
+.login-btn a {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 11px;
+  padding: 5px;
 }
 /*Navigation Bar*/
 img {
@@ -256,23 +267,22 @@ a.social {
 /*Shop Now*/
 
 #shopNow-carousel {
-  min-height: 300px;
+  min-height: 500px;
   color: #f2b807;
   outline: black;
   width: 100%;
-  background-color: white;
 }
 
 #shopNow-carousel .shop-img {
   position: absolute;
-  background: url(/images/Elter\Ego\Logo.jpg);
+  background: url(./images/Elter-Ego-Logo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 500px;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 1;
 }
 #shopNow-carousel h1 {
   padding-top: 100px;
@@ -307,4 +317,27 @@ a.social {
 button:hover {
   color: #f2b807;
   background-color: #222222;
+}
+
+/*About Page*/
+.about-page {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container {
+  display: grid;
+  background-color: aqua;
+  background: url(/images/egyptianT.jpg) no-repeat left;
+  background-size: 55%;
+  overflow: hidden;
+  padding: 100px;
+}
+
+.about-1 {
+  width: 55%;
+  float: right;
 }
