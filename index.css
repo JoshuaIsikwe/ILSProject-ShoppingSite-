@@ -320,24 +320,52 @@ button:hover {
 }
 
 /*About Page*/
-.about-page {
-  background-color: whitesmoke;
-  box-sizing: border-box;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-container {
-  display: grid;
-  background-color: aqua;
-  background: url(/images/egyptianT.jpg) no-repeat left;
-  background-size: 55%;
-  overflow: hidden;
-  padding: 100px;
+.about-page,
+.contact-main {
+  text-align: center;
+  background-color: #f2b807;
 }
 
-.about-1 {
+.about-header {
+  height: 400px;
+  background: whitesmoke;
+  position: relative;
+}
+
+#about-title {
+  position: absolute;
+  color: #222222;
+  font-family: "Poppins";
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-content,
+#delivery-info {
+  margin: auto;
+  width: 75%;
+  background-color: whitesmoke;
+}
+
+.about-content p {
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #111;
   width: 55%;
-  float: right;
+  margin: auto;
+}
+
+#blockquote {
+  font-family: "playfair display";
+  font-style: italic;
+  font-size: 24px;
+  padding: 30px 20px;
+
+  border: 1px rgba(0, 0, 0, 0.1);
+}
+
+#truck {
+  font-size: 100px;
+  padding-top: 100px;
 }
