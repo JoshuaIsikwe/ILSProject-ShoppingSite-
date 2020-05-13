@@ -320,8 +320,7 @@ button:hover {
 }
 
 /*About Page*/
-.about-page,
-.contact-main {
+.about-page {
   text-align: center;
   background-color: #f2b807;
 }
@@ -348,7 +347,8 @@ button:hover {
   background-color: whitesmoke;
 }
 
-.about-content p {
+.about-content p,
+h3 {
   font-family: "Poppins";
   font-weight: 300;
   color: #111;
@@ -365,7 +365,65 @@ button:hover {
   border: 1px rgba(0, 0, 0, 0.1);
 }
 
-#truck {
+#truck,
+#card-icon {
   font-size: 100px;
   padding-top: 100px;
+  color: #222222;
+}
+
+/*Contact*/
+.contact-section {
+  background-color: whitesmoke;
+  color: #111;
+  font-family: "Poppins";
+  padding: 40px;
+  margin: auto;
+  width: 80%;
+}
+
+.border {
+  width: 100px;
+  height: 10px;
+  background-color: #222222;
+  margin: 40px auto;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 70%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #222222;
+  padding: 20px 40px;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px whitesmoke;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  border: 0;
+  background-color: #f2b807;
+  color: whitesmoke;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background-color: #222222;
 }

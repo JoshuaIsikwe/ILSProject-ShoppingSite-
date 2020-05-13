@@ -53,42 +53,36 @@
     </nav>
 
     <main class="contact-main">
-      <div class="about-header">
+      <!-- <div class="about-header">
         <h1 id="about-title">Contact Us</h1>
-      </div>
+      </div>-->
 
-      <p>under construction</p>
-
-      <div class="about-content">
-        <div>
-          <form action="action_page.php">
-            <label for="Name">Full Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-        </div>
-       
-        <div>
-          <label for="country">Email</label>
-          <input type="email" placeholder="Your name..">
-        </div>
-
-        <div>
-          <label for="subject">Subject</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something.."
-            style="height: 100px;
-          ></textarea>
-
-          <input type="submit" value="Submit" />
-        </div>
-        </form>
+      <div class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="border"></div>
+        <input type="text" class="contact-form-text" placeholder="Full Name" />
+        <input
+          type="email"
+          class="contact-form-text"
+          placeholder="E-mail Address"
+        />
+        <input
+          type="text"
+          class="contact-form-text"
+          placeholder="Phone Number"
+        />
+        <textarea
+          class="contact-form-text"
+          placeholder="Write your complaint"
+        ></textarea>
+        <input type="Submit" class="contact-form-btn" value="Send" />
       </div>
     </main>
+
+    <!--FOOTER-->
+    <footer id="main-footer" class="grid">
+      <div>Elter Ego</div>
+      <div>Project by Underscore Solutions 2020</div>
+    </footer>
   </body>
 </html>
