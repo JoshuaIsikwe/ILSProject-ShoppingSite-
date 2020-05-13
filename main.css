@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:&display=swap");
+
+/*CORE STYLES*/
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: whitesmoke;
+  color: #f2b807;
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+  padding-bottom: 12px;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+  padding-top: 0px;
+  font-weight: lighter;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: #101010;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 40px 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #101010;
+  margin-right: 0.5em 0;
+  letter-spacing: 2px;
+}
+
+a.social {
+  color: #f2b807;
+  font-size: 48px;
+}
+
+.btn:hover {
+  background: #101010;
+  color: #eaeaea;
+}
+
+/*HEADER CAROUSEL*/
+
+#carousel {
+  min-height: 450px;
+  color: #101010;
+  text-align: center;
+}
+
+#carousel .bg-img {
+  position: absolute;
+  background: #101010 url(./images/warriorEnergy3.jpg);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#carousel h1 {
+  padding-top: 180px;
+  padding-bottom: 0px;
+  font-weight: bolder;
+  text-shadow: none;
+  font-size: 55px;
+  color: #101010;
+}
+
+#carousel p {
+  padding-top: 0px;
+  padding-bottom: 72px;
+  color: #101010;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#carousel .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+#carousel .btn {
+  font-size: 16px;
+  color: #f2b807;
+  font-weight: 700;
+  padding: 16px 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #101010;
+  border-radius: 0px;
+  border: 1px solid #f2b807;
+}
+
+#carousel .btn:hover {
+  background: #101010;
+  border-color: #f2b807;
+  color: #f2b807;
+}
+
+/*SECTION A*/
+
+#section-a {
+  background: whitesmoke;
+  color: #101010;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+/*SECTION B*/
+.productGrid {
+  font-family: "Montserrat", "sans-serif";
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0px;
+  border: 4px solid #101010;
+}
+
+.productGrid:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.productGrid:hover:before {
+  background: #101010;
+}
+
+.productGrid .productImage {
+  overflow: hidden;
+  position: relative;
+}
+
+.productGrid .productImage a {
+  display: block;
+}
+
+.productGrid .productImage img {
+  width: 100%;
+  height: auto;
+}
+
+.productGrid .productContent {
+  padding: 18px;
+  position: relative;
+  z-index: 2;
+  background-color: #101010;
+}
+
+.productGrid .title a {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  color: #f2b807;
+  font-weight: bold;
+}
+
+/*SECTION C*/
+
+#section-c {
+  background: #101010;
+  color: whitesmoke;
+  padding: 2em;
+}
+
+#section-c .content-title {
+  color: whitesmoke;
+}
+
+/*SECTION D*/
+#section-d .box {
+  padding: 2em;
+  color: #101010;
+}
+
+#section-d .box:last-child {
+  background: #101010;
+  color: whitesmoke;
+}
+
+#section-d .box:last-child .btn {
+  background: transparent;
+  color: whitesmoke;
+  border-color: white;
+}
+
+#section-d .box:last-child .btn:hover {
+  background: #f2b807;
+  color: #101010;
+  border: none;
+}
+
+/*FOOTER*/
+
+#main-footer {
+  padding: 2em;
+  background: #f2b807;
+  color: #101010;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+/*MEDIA QUERIES(for responsive design)*/
+
+/*@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p {
+    padding: 0;
+    text-align: justify;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+}*/
+
+/*NAVIGATION BAR*/
+nav {
+  background: #101010;
+  height: 60px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 26px;
+  line-height: 80px;
+  padding: 0 100 px;
+  font-weight: bold;
+  margin-left: 50px;
+  position: relative;
+  top: -10px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 2px;
+  margin-right: 20px;
+}
+
+a.active,
+a:hover {
+  background: none;
+  color: #f2b807;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: wheat;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/*@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #f2b807;
+    text-decoration: none;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+/*      .wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: stretch; positions from left to right
+        align-items: stretch; positions from top to bottom
+        grid-column: 1/3; resizes box left to right
+        grid-row: 1/3; resizes box top to bottom
+      }
+      .wrapper > div {
+        background: #eeeeee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background: #dddddd;
+      }
+*/
