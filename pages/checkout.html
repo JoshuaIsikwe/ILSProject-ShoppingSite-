@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font" /> 
+
+    <link href="C:\Users\information systems\information system project\ILSProject-ShoppingSite--master\checkout.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col-main">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+
+                        <div class="col-1">
+           
+                            <h3>Billing Address</h3>
+                            <!--billing colomn-->
+        <label for="fname"><i class="fa fa-user"></i>first name</label>
+        <input type="text" id="fname" name="firstname" placeholder="pedro" />
+
+        <label for="fname"><i class="fa fa-user"></i>Email</label>
+        <input type="text" id="email" name="email" placeholder="pedrophelane@gmail.com" />
+
+        <label for="fname"><i class="fa fa-user"></i>Addres</label>  
+        <input type="text" id="adress" name="address" placeholder="290 rome 14 street" />
+
+        <label for="fname"><i class="fa fa-user">City</i></label>
+        <input type="text" id="city" name="city" placeholder="bloem" />
+
+        <div class="row">
+            <div class="col-2">
+                <label for="state">State</label>
+                <input type="text" id="state" name="STATE" placeholder="PP" />
+
+            </div>
+            <div class="col-2">
+                <label for="state">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001" />
+
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="col-2">
+        <h3>Payments</h3>
+          <!--payments colomn-->
+        <label for="fname">WE only accept EFT payment</label>
+        <div class="icon-container">
+
+            <img src="C:\Users\information systems\information system project\ILSProject-ShoppingSite--master\images\bank.png" alt="Alternate Text" class="user" />
+            
+          <!--the company uses the prefer the EFT payment method-->
+        </div>
+        <label for="infor1">payments instructions</label>
+        <label for="infor2">############</label>
+        <label for="infor3">###########</label>
+        
+        <div class="row">
+            <div class="col-2">
+                <label for="infor4">##########</label>
+            </div>
+            
+        </div>
+        <input type="submit" value="continue to checkout" class="btn" />
+    </div>
+    </div>
+    <label>
+    <input type="checkbox" checked="checked" name="sameadr" />Shipping adress same as billing</label>
+    <input type="checkbox" checked="checked" name="sameadr" />Save this information for next time</label>
+    <h5>© 2020 Underscore_ Team</h5>
+   
+                </form>
+            </div>
+
+        </div>
+<div class="col-3">
+    <div class="container">
+          <!--cart colomn,this colomn displays results made on the cart page,however,the user will be able to return back 
+            to the cart page if they want to change or want to add something new
+            the button "back to cart" will be used as a return to cart button-->
+        <h4>Your Cart<span class="price" style="color: black;"><i class="fa fa-shopping-cart"></i><b>0</b></span></h4>
+        <p><a href="#">Jacket</a><span class="price">R0</span></p>
+        <p><a href="#">hat</a><span class="price">R0</span></p>
+        <p><a href="#">shirt</a><span class="price">R0</span></p>
+        <hr />
+        <p>Total<span class="price" style="color:black"><b>R0</b></span></p>
+        <input type="submit" value="Back to cart" class="btn2" />
+
+              <!--preference banking is FNB-->
+    </div>
+    <img src="C:\Users\information systems\information system project\ILSProject-ShoppingSite--master\images\Elter-Ego-Logo.jpg" alt="Alternate Text" class="user2" />
+
+</div>
+    </div>
+   
+
+</body>
+</html>
