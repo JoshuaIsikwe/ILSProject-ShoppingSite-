@@ -310,7 +310,7 @@ a.social {
   font-size: 30px;
   width: 100%;
   background-color: #f2b807;
-  border: solid#f2b807;
+  border: 0;
   outline: #f2b807;
 }
 
@@ -348,7 +348,7 @@ button:hover {
 }
 
 .about-content p,
-h3 {
+.contact-section h3 {
   font-family: "Poppins";
   font-weight: 300;
   color: #111;
@@ -373,6 +373,9 @@ h3 {
 }
 
 /*Contact*/
+.contact-main {
+  padding-bottom: 100px;
+}
 .contact-section {
   background-color: whitesmoke;
   color: #111;
@@ -380,12 +383,14 @@ h3 {
   padding: 40px;
   margin: auto;
   width: 80%;
+  box-sizing: border-box;
+  border-radius: 50px;
 }
 
 .border {
   width: 100px;
   height: 10px;
-  background-color: #222222;
+  background-color: #;
   margin: 40px auto;
 }
 .contact-form {
@@ -399,7 +404,7 @@ h3 {
   display: block;
   width: 70%;
   box-sizing: border-box;
-  margin: 16px 0;
+  margin: 16px auto;
   border: 0;
   background: #222222;
   padding: 20px 40px;
@@ -408,7 +413,7 @@ h3 {
 }
 
 .contact-form-text:focus {
-  box-shadow: 0 0 10px 4px whitesmoke;
+  box-shadow: 0 0 10px 4px #f2b807;
 }
 
 textarea.contact-form-text {
@@ -418,12 +423,14 @@ textarea.contact-form-text {
 .contact-form-btn {
   border: 0;
   background-color: #f2b807;
-  color: whitesmoke;
+  color: #222222;
   padding: 12px 50px;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  padding-bottom: 10px;
 }
 .contact-form-btn:hover {
   background-color: #222222;
+  color: whitesmoke;
 }
