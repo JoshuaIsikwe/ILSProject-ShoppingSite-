@@ -80,7 +80,7 @@ label.logo {
   color: white;
   font-size: 26px;
   line-height: 80px;
-  padding: 0 100 px;
+  padding: 0 100px;
   font-weight: bold;
   margin-left: 50px;
   position: relative;
@@ -107,8 +107,8 @@ nav ul li a {
   margin-right: 20px;
 }
 
-a.active,
-a:hover {
+ul a.active,
+ul a:hover {
   background: none;
   color: #f2b807;
   text-decoration: none;
@@ -129,7 +129,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 952px) {
+/*@media (max-width: 952px) {
   label.logo {
     font-size: 30px;
     padding-left: 50px;
@@ -174,4 +174,4 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
-}
+}*/

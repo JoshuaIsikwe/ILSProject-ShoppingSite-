@@ -1,0 +1,6 @@
+1. Shopping Cart Page
+2. Customer Profile Page
+    -Acc. Info(updateable: Name,password,email,mobile number)
+    -Orders
+    -Returns/Exchanges/Shipping
+3. Footer (fill with similar info to Superbalist)
