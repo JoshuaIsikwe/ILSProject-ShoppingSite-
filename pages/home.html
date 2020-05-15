@@ -32,25 +32,41 @@
 
   <body>
     <!--NAVIGATION BAR-->
-    <div>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Elter Ego</label>
-        <ul>
-          <li><a href="active" id="navlink">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Sign In</a></li>
+    <nav>
+      <ul>
+        <li class="logo">Elter Ego</li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+          <li><a href="home.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop</button>
+            <div class="dropdown-content">
+              <a href="productCategory.html">T-Shirts</a>
+              <a href="#">Elter Hats</a>
+              <a href="#">Swimsuits</a>
+            </div>
+          </div>
+          <!--<li><a href="#">Shop</a></li>-->
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="signIn-Up.html">Sign In/Sign Up</a></li>
           <li><a href="#">Account</a></li>
-          <li><a href="#">Search</a></li>
-          <li><a href="#">Cart</a></li>
-        </ul>
-      </nav>
-    </div>
+            <li>
+              <a class="cart-btn" href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </div>
+        </div>
+        <div class="search-box">
+          <input class="search-txt" type="text" placeholder="Search..." />
+          <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </ul>
+    </nav>
+
     <!--Header Carousel-->
     <header id="carousel" class="grid">
       <div class="carousel-wrapper">
@@ -62,114 +78,87 @@
         </h1>
         <p>A new collection of t-shirts is now available</p>
       </div>
-      <button href="#" class="btn">SHOP NOW</button>
+      <button onclick='window.location.href="productPage.html"' class="btn">SHOP NOW</button>
     </header>
 
     <!--MAIN AREA-->
     <main id="main">
-      <!--SECTION B-->
-      <div class="container">
-        <div class="content-title">
-          <h2>Shop Our Collection</h2>
-        </div>
-        <div class="row">
-          <!--CATEGORY 1-->
-          <div class="col-md-3">
-            <div class="productGrid">
-              <div class="productImage">
-                <a href="">
-                  <img src="/images/egyptianT.jpg" alt="" class="pic-1" />
-                </a>
-              </div>
-              <div class="productContent">
-                <h3 class="title">
-                  <a href="">
-                    T-Shirts
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!--CATEGORY 2-->
-          <div class="col-md-3">
-            <div class="productGrid">
-              <div class="productImage">
-                <a href="">
-                  <img src="/images/sunhat.jpg" alt="" class="pic-1" />
-                </a>
-              </div>
-              <div class="productContent">
-                <h3 class="title">
-                  <a href="">
-                    Elter Hats
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!--CATEGORY 3-->
-          <div class="col-md-3">
-            <div class="productGrid">
-              <div class="productImage">
-                <a href="">
-                  <img src="/images/swimsuitblk.jpg" alt="" class="pic-1" />
-                </a>
-              </div>
-              <div class="productContent">
-                <h3 class="title">
-                  <a href="">
-                    Swimsuits
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!--SECTION A-->
       <section id="section-a" class="grid">
-        <div class="content-wrap">
-          <h2>What We Do</h2>
-          <div class="content-text">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-              repellendus expedita cum, reiciendis ad exercitationem quas
-              dolores molestias quisquam pariatur dignissimos veritatis
-              voluptatem. Non suscipit aut, numquam laborum a dolorem,
-              accusantium, reprehenderit eaque nulla est nesciunt? Doloremque
-              nulla nihil illo fuga, optio nemo ratione neque temporibus
-              excepturi cumque libero illum.
-            </p>
+        <div class="content-title">
+            <h2>SHOP OUR COLLECTION</h2>
           </div>
-        </div>
+          <div class="row">
+            <!--CATEGORY 1-->
+            <div class="col-md-4">
+              <div class="productGrid">
+                <div class="productImage">
+                  <a href="">
+                    <img src="/images/egyptianT.jpg" alt="" class="pic-1" />
+                  </a>
+                </div>
+                <div class="productContent">
+                  <h3 class="title">
+                    <a href="productCategory.html">
+                      T-Shirts
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!--CATEGORY 2-->
+            <div class="col-md-4">
+              <div class="productGrid">
+                <div class="productImage">
+                  <a href="">
+                    <img src="/images/sunhat.jpg" alt="" class="pic-1" />
+                  </a>
+                </div>
+                <div class="productContent">
+                  <h3 class="title">
+                    <a href="">
+                      Elter Hats
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!--CATEGORY 3-->
+            <div class="col-md-4">
+              <div class="productGrid">
+                <div class="productImage">
+                  <a href="">
+                    <img src="/images/swimsuitblk.jpg" alt="" class="pic-1" />
+                  </a>
+                </div>
+                <div class="productContent">
+                  <h3 class="title">
+                    <a href="">
+                      Swimsuits
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
-      <!--SECTION C-->
-      <section id="section-c" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">Chat With Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit adipisci repellendus nisi nihil praesentium! Delectus
-            architecto tempore dolores. Illo, quae.
-          </p>
-          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </section>
-
-      <!--SECTION D-->
-      <section id="section-d" class="grid">
+      
+      <!--SECTION B-->
+      <section id="section-b" class="grid">
         <div class="box">
-          <img src="/images/popup-shop.jpg" alt="" />
-          <h2 class="content-title">Checkout Our PopUp Shops</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            soluta saepe voluptatum id alias excepturi! Amet dolores libero ex
-            quidem.
-          </p>
-          <a href="#" class="btn">See More</a>
-        </div>
+          <div class="image">
+            <a href="">
+              <img src="/images/popUpT2.jpg" alt=""/>
+            </a>
+          </div>
+            <div class="content-text">
+              <h2>OUR LATEST POP UP SHOPS</h2>
+            <p>
+              Find out when and where our latest clothing collections will be launched. We open a popup shop every time we create NEW Elter Ego gear. Click below to find out where you can get your new Elter swag.
+            </p>
+            <a href="#" class="btn">See More</a>
+            </div>
+          </div>
       </section>
     </main>
 
