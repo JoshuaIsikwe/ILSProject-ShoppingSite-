@@ -1,99 +1,30 @@
-var fadeTime = 300;
-
-/* Assign actions */
-$(".quantity input").change(function () {
-  updateQuantity(this);
-});
-
-$(".remove button").click(function () {
-  removeItem(this);
-});
-
-$(document).ready(function () {
-  updateSumItems();
-});
-
-/* Recalculate cart */
-function recalculateCart(onlyTotal) {
-  var subtotal = 0;
-
-  /* Sum up row totals */
-  $(".cart-product").each(function () {
-    subtotal += parseFloat($(this).children(".subtotal").text());
-  });
-
-  /* Calculate totals */
-  var total = subtotal;
-
-  //If there is a valid promoCode, and subtotal < 10 subtract from total
-  var promoPrice = parseFloat($(".promo-value").text());
-  if (promoPrice) {
-    if (subtotal >= 10) {
-      total -= promoPrice;
-    } else {
-      alert("Order must be more than £10 for Promo code to apply.");
-      $(".summary-promo").addClass("hide");
-    }
-  }
-
-  /*If switch for update only total, update only total display*/
-  if (onlyTotal) {
-    /* Update total display */
-    $(".total-value").fadeOut(fadeTime, function () {
-      $("#cart-total").html(total.toFixed(2));
-      $(".total-value").fadeIn(fadeTime);
-    });
-  } else {
-    /* Update summary display. */
-    $(".final-value").fadeOut(fadeTime, function () {
-      $("#cart-subtotal").html(subtotal.toFixed(2));
-      $("#cart-total").html(total.toFixed(2));
-      if (total == 0) {
-        $(".checkout-cta").fadeOut(fadeTime);
-      } else {
-        $(".checkout-cta").fadeIn(fadeTime);
-      }
-      $(".final-value").fadeIn(fadeTime);
-    });
-  }
+var addToCartButtons = document.getElementsByClassName("add-cart");
+for (i = 0; i < addToCartButtons.length; i++) {
+  var button = addToCartButtons[i];
+  button.addEventListener("click", addToCartClicked);
 }
 
-/* Update quantity */
-function updateQuantity(quantityInput) {
-  /* Calculate line price */
-  var productRow = $(quantityInput).parent().parent();
-  var price = parseFloat(productRow.children(".price").text());
-  var quantity = $(quantityInput).val();
-  var linePrice = price * quantity;
-
-  /* Update line price display and recalc cart totals */
-  productRow.children(".subtotal").each(function () {
-    $(this).fadeOut(fadeTime, function () {
-      $(this).text(linePrice.toFixed(2));
-      recalculateCart();
-      $(this).fadeIn(fadeTime);
-    });
-  });
-
-  productRow.find(".item-quantity").text(quantity);
-  updateSumItems();
+function addToCartClicked(event) {
+  var button = event.target;
+  var productContainer = button.parentElement.parentElement.parentElement;
+  var productName = productContainer.getElementsByClassName("title")[0]
+    .innerText;
+  var price = productContainer.getElementsByClassName("price")[0].innerText;
+  var image = productContainer.getElementsByClassName("productImage")[0].src;
+  console.log(productName, price, image);
 }
 
-function updateSumItems() {
-  var sumItems = 0;
-  $(".quantity input").each(function () {
-    sumItems += parseInt($(this).val());
-  });
-  $(".total-items").text(sumItems);
-}
+function addItemToCart(productName, price, image) {
+  var cartRow = document.createElement("div");
 
-/* Remove item from cart */
-function removeItem(removeButton) {
-  /* Remove row from DOM and recalc cart total */
-  var productRow = $(removeButton).parent().parent();
-  productRow.slideUp(fadeTime, function () {
-    productRow.remove();
-    recalculateCart();
-    updateSumItems();
-  });
+  cartRow.classList.add("cart-row");
+  var cartItems = document.getElementsByClassName("cart-items");
+  var cartRowItems = `
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEMg</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>`;
+  cartRow.innerHTML = cartRowContents;
+  cartItems.append(cartRow);
 }

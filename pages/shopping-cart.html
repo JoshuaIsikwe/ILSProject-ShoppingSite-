@@ -3,128 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./cart.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <script src="/pages/cart.js" async></script>
-    <title>Cart</title>
+    <link href="/pages/cart.css" rel="stylesheet" />
+    <script src="cart.js"></script>
+    <title>CART</title>
   </head>
 
-  <body class="cart-body">
-    <main>
-      <!--NAVIGATION BAR-->
-      <div>
-        <nav>
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <label class="logo">Elter Ego</label>
-          <ul>
-            <li><a href="active" id="navlink">Home</a></li>
-            <li><a href="/pages/Shop-now.html">Shop</a></li>
-            <li><a href="/pages/about.html">About Us</a></li>
-            <li><a href="/pages/contact.html">Contact Us</a></li>
-            <li><a href="/pages/signIn-Up.html">Sign In</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Cart</a></li>
-          </ul>
-        </nav>
+  <body>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
       </div>
-      <!--Cart-->
-      <div class="cart">
-        <div class="cart-labels">
-          <ul>
-            <li class="item item-heading">Item</li>
-            <li class="price">Price</li>
-            <li class="quantity">Quantity</li>
-            <li class="subtotal">Subtotal</li>
-          </ul>
-        </div>
-        <div class="cart-product">
-          <div class="item">
-            <div class="product-image">
-              <img
-                src="/images/warriorEnergy.jpg"
-                alt=""
-                class="product-frame"
-              />
-            </div>
-            <div class="product-details">
-              <h1>><span class="item-quantity">4</span>x Warrior Energy Tee</h1>
-              <p><strong>Yellow, Small</strong></p>
-              <p>Product Code - 232321939</p>
-            </div>
-          </div>
-          <div class="price">300</div>
-          <div class="quantity">
-            <input type="number" value="4" min="1" class="quantity-field" />
-          </div>
-          <div class="subtotal">300</div>
-          <div class="remove">
-            <button>Remove</button>
-          </div>
-        </div>
-
-        <div class="cart-product">
-          <div class="item">
-            <div class="product-image">
-              <img src="/images/swimsuitblk.jpg" alt="" class="product-frame" />
-            </div>
-            <div class="product-details">
-              <h1><span class="item-quantity">1</span> x Swimsuit</h1>
-              <p><strong>Black, Size 10</strong></p>
-              <p>Product Code - 232321939</p>
-            </div>
-          </div>
-          <div class="price">220</div>
-          <div class="quantity">
-            <input type="number" value="1" min="1" class="quantity-field" />
-          </div>
-          <div class="subtotal">220</div>
-          <div class="remove">
-            <button>Remove</button>
-          </div>
-        </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
       </div>
-
-      <aside>
-        <div class="summary">
-          <div class="summary-total-items">
-            <span class="total-items"></span> Items in your Cart
-          </div>
-          <div class="summary-subtotal">
-            <div class="subtotal-title">Subtotal</div>
-            <div class="subtotal-value final-value" id="cart-subtotal">
-              1300
-            </div>
-          </div>
-          <div class="summary-delivery">
-            <select
-              name="delivery-collection"
-              class="summary-delivery-selection"
-            >
-              <option value="0" selected="selected"
-                >Select Collection or Delivery</option
-              >
-              <option value="collection">Collection</option>
-              <option value="Delivery">Delivery</option>
-            </select>
-          </div>
-          <div class="summary-total">
-            <div class="total-title">Total</div>
-            <div class="total-value final-value" id="cart-total">130.00</div>
-          </div>
-          <div class="summary-checkout">
-            <button class="checkout-cta">Go to Secure Checkout</button>
-          </div>
-        </div>
-      </aside>
-    </main>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
   </body>
 </html>
