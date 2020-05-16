@@ -10,150 +10,155 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap"
       rel="stylesheet"
+    />
+    <link href="../index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Kanit|Roboto&display=swap"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
     />
-    <link href="index.css" rel="stylesheet" />
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Home</title>
   </head>
 
   <body>
+    <!--NAVIGATION BAR-->
     <nav>
-      <i><img src="/images/IMG-20200208-WA0027 (1).ico" /></i>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="/Shop-now.html">Shop Now</a></li>
-        <!--<li><a href="/Elter-news.html">Elter News</a></li>-->
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
-        <div class="search-box">
-          <input
-            class="search-txt"
-            type="text"
-            name=""
-            placeholder="What are you looking for?"
-          />
-          <a class="search-btn" href="#"> <i class="fas fa-search"></i></a>
+      <ul>
+        <li class="logo">Elter Ego</li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+          <li><a href="home.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop</button>
+            <div class="dropdown-content">
+              <a href="productCategory.html">T-Shirts</a>
+              <a href="#">Elter Hats</a>
+              <a href="#">Swimsuits</a>
+            </div>
+          </div>
+          <!--<li><a href="#">Shop</a></li>-->
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="signIn-Up.html">Sign In/Sign Up</a></li>
+          <li><a href="#">Account</a></li>
+            <li>
+              <a class="cart-btn" href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </div>
         </div>
-        <li>
-          <a href="/Shop-now.html"><i class="fas fa-shopping-cart"></i></a>
-        </li>
-      </ul>
-      <div class="login-btn">
-        <li>
-          <a href="/signIn-Up.html">
-            Sign In/Register
+        <div class="search-box">
+          <input class="search-txt" type="text" placeholder="Search..." />
+          <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
           </a>
-        </li>
-      </div>
+        </div>
+      </ul>
     </nav>
 
     <!--Header Carousel-->
     <header id="carousel" class="grid">
-      <div class="bg-img"></div>
-      <div class="content-wrap">
-        <h1>ELTER EGO</h1>
-        <p>Check what we have in store</p>
-        <a href="/Shop-now.html" class="btn">Shop Now</a>
+      <div class="carousel-wrapper">
+        <div class="bg-img"></div>
       </div>
+      <div class="content-wrap">
+        <h1>
+          WARRIOR ENERGY
+        </h1>
+        <p>A new collection of t-shirts is now available</p>
+      </div>
+      <button onclick='window.location.href="productPage.html"' class="btn">SHOP NOW</button>
     </header>
 
     <!--MAIN AREA-->
     <main id="main">
       <!--SECTION A-->
       <section id="section-a" class="grid">
-        <div class="content-wrap">
-          <h2>What We Do</h2>
-          <div class="content-text">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-              repellendus expedita cum, reiciendis ad exercitationem quas
-              dolores molestias quisquam pariatur dignissimos veritatis
-              voluptatem. Non suscipit aut, numquam laborum a dolorem,
-              accusantium, reprehenderit eaque nulla est nesciunt? Doloremque
-              nulla nihil illo fuga, optio nemo ratione neque temporibus
-              excepturi cumque libero illum.
-            </p>
+        <div class="section-title">
+            <h2>SHOP OUR COLLECTION</h2>
           </div>
-        </div>
+          <div class="row">
+            <!--CATEGORY 1-->
+            <div class="col-md-4">
+              <div class="categoryGrid">
+                <div class="categoryImage">
+                  <a href="">
+                    <img src="/images/egyptianT.jpg" alt="" class="pic-1" />
+                  </a>
+                </div>
+                <div class="categoryContent">
+                  <h3 class="category-title">
+                    <a href="productCategory.html">
+                      T-Shirts
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!--CATEGORY 2-->
+            <div class="col-md-4">
+              <div class="categoryGrid">
+                <div class="categoryImage">
+                  <a href="">
+                    <img src="/images/sunhat.jpg" alt="" class="pic-1" />
+                  </a>
+                </div>
+                <div class="categoryContent">
+                  <h3 class="category-title">
+                    <a href="">
+                      Elter Hats
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!--CATEGORY 3-->
+            <div class="col-md-4">
+              <div class="categoryGrid">
+                <div class="categoryImage">
+                  <a href="">
+                    <img src="/images/swimsuitblk.jpg" alt="" class="pic-1" />
+                  </a>
+                </div>
+                <div class="categoryContent">
+                  <h3 class="category-title">
+                    <a href="">
+                      Swimsuits
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
+      
       <!--SECTION B-->
       <section id="section-b" class="grid">
-        <ul>
-          <li>
-            <div class="card">
-              <img src="/images/egyptianT.jpg" alt="" />
-              <div class="card-content">
-                <h2>Our Products</h2>
-                <h3>T-shirts</h3>
-                <a href="#" class="btn">Shop</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="/images/womaninhat.jpg" alt="" />
-              <div class="card-content">
-                <h3>Elter Hats</h3>
-                <a href="#" class="btn">Shop</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="/images/swimsuitblk.jpg" alt="" />
-              <div class="card-content">
-                <h3>Swimsuits</h3>
-                <a href="#" class="btn">Shop</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!--SECTION C-->
-      <section id="section-c" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">Talk to Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit adipisci repellendus nisi nihil praesentium! Delectus
-            architecto tempore dolores. Illo, quae.
-          </p>
-          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </section>
-
-      <!--SECTION D-->
-      <section id="section-d" class="grid">
         <div class="box">
-          <img src="/images/popup-shop.jpg" alt="" />
-          <h2 class="content-title">Checkout Our PopUp Shops</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            soluta saepe voluptatum id alias excepturi! Amet dolores libero ex
-            quidem.
-          </p>
-          <a href="/Elter-news.html" class="btn">See More</a>
-        </div>
-
-        <div class="box">
-          <img src="/images/crownT.jpg" alt="" />
-          <h2 class="content-title">Upcoming ElterEgo Gear</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-            velit molestiae nobis quae earum fugit quibusdam, est nihil ad
-            quisquam!
-          </p>
-          <a href="/Elter-news.html" class="btn">See More</a>
-        </div>
+          <div class="image">
+            <a href="">
+              <img src="/images/popUpT2.jpg" alt=""/>
+            </a>
+          </div>
+            <div class="content-text">
+              <h2>OUR LATEST POP UP SHOPS</h2>
+            <p>
+              Find out when and where our latest clothing collections will be launched. We open a popup shop every time we create NEW Elter Ego gear. Click below to find out where you can get your new Elter swag.
+            </p>
+            <a href="#" class="btn">See More</a>
+            </div>
+          </div>
       </section>
     </main>
 

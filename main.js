@@ -1,4 +1,5 @@
-/*Sign Up Page */
+/*Sign Up Page*/
+
 const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById("signIn");
 const container = document.getElementById("container");
