@@ -50,7 +50,15 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="signIn-Up.html">Sign In/Sign Up</a></li>
-          <li><a href="#">Account</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Account</button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Orders</a>
+              <a href="#">Returns/Exchanges</a>
+              <a href="#">Log Out</a>
+            </div>
+          </div>
             <li>
               <a class="cart-btn" href="#">
                 <i class="fas fa-shopping-cart"></i>
@@ -85,20 +93,20 @@
     <main id="main">
       <!--SECTION A-->
       <section id="section-a" class="grid">
-        <div class="content-title">
+        <div class="section-title">
             <h2>SHOP OUR COLLECTION</h2>
           </div>
           <div class="row">
             <!--CATEGORY 1-->
             <div class="col-md-4">
-              <div class="productGrid">
-                <div class="productImage">
+              <div class="categoryGrid">
+                <div class="categoryImage">
                   <a href="">
                     <img src="/images/egyptianT.jpg" alt="" class="pic-1" />
                   </a>
                 </div>
-                <div class="productContent">
-                  <h3 class="title">
+                <div class="categoryContent">
+                  <h3 class="category-title">
                     <a href="productCategory.html">
                       T-Shirts
                     </a>
@@ -108,14 +116,14 @@
             </div>
             <!--CATEGORY 2-->
             <div class="col-md-4">
-              <div class="productGrid">
-                <div class="productImage">
+              <div class="categoryGrid">
+                <div class="categoryImage">
                   <a href="">
                     <img src="/images/sunhat.jpg" alt="" class="pic-1" />
                   </a>
                 </div>
-                <div class="productContent">
-                  <h3 class="title">
+                <div class="categoryContent">
+                  <h3 class="category-title">
                     <a href="">
                       Elter Hats
                     </a>
@@ -125,14 +133,14 @@
             </div>
             <!--CATEGORY 3-->
             <div class="col-md-4">
-              <div class="productGrid">
-                <div class="productImage">
+              <div class="categoryGrid">
+                <div class="categoryImage">
                   <a href="">
                     <img src="/images/swimsuitblk.jpg" alt="" class="pic-1" />
                   </a>
                 </div>
-                <div class="productContent">
-                  <h3 class="title">
+                <div class="categoryContent">
+                  <h3 class="category-title">
                     <a href="">
                       Swimsuits
                     </a>
