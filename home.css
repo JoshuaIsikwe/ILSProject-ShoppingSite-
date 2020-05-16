@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:&display=swap");
 
+/*HOME PAGE*/
+
 /*CORE STYLES*/
 
 body {
@@ -43,11 +45,6 @@ p {
   border: 1px solid #101010;
   margin-right: 0.5em 0;
   letter-spacing: 2px;
-}
-
-a.social {
-  color: #f2b807;
-  font-size: 48px;
 }
 
 .btn:hover {
@@ -319,12 +316,12 @@ nav ul li.btn span.show:before {
   color: #101010;
 }
 
-#section-a .content-title h2 {
+#section-a .section-title h2 {
   text-align: center;
   padding-bottom: 1em;
 }
 
-.productGrid {
+.categoryGrid {
   font-family: "Montserrat", "sans-serif";
   text-align: center;
   overflow: hidden;
@@ -333,7 +330,7 @@ nav ul li.btn span.show:before {
   border: 4px solid #101010;
 }
 
-.productGrid:before {
+.categoryGrid:before {
   content: "";
   height: 100%;
   width: 100%;
@@ -344,32 +341,33 @@ nav ul li.btn span.show:before {
   transition: all 0.3s ease 0s;
 }
 
-.productGrid:hover:before {
+.categoryGrid:hover:before {
   background: #101010;
 }
 
-.productGrid .productImage {
+.categoryGrid .categoryImage {
   overflow: hidden;
   position: relative;
 }
 
-.productGrid .productImage a {
+.categoryGrid .categoryImage a {
   display: block;
 }
 
-.productGrid .productImage img {
+.categoryGrid .categoryImage img {
   width: 100%;
   height: auto;
 }
 
-.productGrid .productContent {
+.categoryGrid .categoryContent {
   padding: 18px;
   position: relative;
   z-index: 2;
   background-color: #101010;
 }
 
-.productGrid .title a {
+.categoryGrid .category-title a {
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
   margin: 0 0 10px 0;
@@ -483,23 +481,200 @@ nav ul li.btn span.show:before {
   }
 }*/
 
-/*      .wrapper {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-row-gap: 1em;
-        grid-column-gap: 1em;
-        grid-gap: 1em;
-        grid-auto-rows: minmax(100px, auto);
-        justify-items: stretch; positions from left to right
-        align-items: stretch; positions from top to bottom
-        grid-column: 1/3; resizes box left to right
-        grid-row: 1/3; resizes box top to bottom
-      }
-      .wrapper > div {
-        background: #eeeeee;
-        padding: 1em;
-      }
-      .wrapper > div:nth-child(odd) {
-        background: #dddddd;
-      }
-*/
+/*HOME PAGE*/
+
+/*ABOUT PAGE*/
+.about-page {
+  text-align: center;
+  background-color: #f2b807;
+}
+
+.about-header {
+  height: 400px;
+  background: whitesmoke;
+  position: relative;
+}
+
+#about-title {
+  position: absolute;
+  color: #222222;
+  font-family: "Poppins";
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-content,
+#delivery-info,
+#about-body {
+  margin: auto;
+  width: 75%;
+  background-color: whitesmoke;
+}
+
+#tee-pic,
+.card img {
+  width: 100%;
+}
+
+.about-content p,
+h3 {
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #111;
+  width: 55%;
+  margin: auto;
+}
+
+#blockquote {
+  font-family: "playfair display";
+  font-style: italic;
+  font-size: 24px;
+  padding: 30px 20px;
+
+  border: 1px rgba(0, 0, 0, 0.1);
+}
+
+#truck,
+#card-icon {
+  font-size: 100px;
+  padding-top: 100px;
+  color: #222222;
+}
+
+/*CONTACT PAGE*/
+#contact-body .contact-section {
+  background-color: #eaeaea;
+  color: #101010;
+  font-family: "Poppins";
+  padding: 40px;
+  margin: auto;
+  width: 80%;
+}
+
+#contact-body .contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+#contact-body .contact-form-text {
+  display: block;
+  width: 70%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #222222;
+  padding: 20px 40px;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+#contact-body .contact-form-text:focus {
+  box-shadow: 0 0 10px 4px whitesmoke;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  border: 0;
+  background-color: #f2b807;
+  color: whitesmoke;
+  padding: 12px 50px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #101010;
+}
+.contact-form-btn:hover {
+  background-color: #222222;
+}
+
+/*PRODUCT PAGE*/
+
+#product-body .section-a {
+  text-align: left;
+}
+
+#product-body .section-a h2 {
+  color: #101010;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+#product-body .section-b,
+.section-b p {
+  text-align: left;
+  font-size: 16px;
+}
+
+#product-body .section-c {
+  text-align: left;
+  font-size: 16px;
+}
+
+#product-body ul li {
+  list-style: none;
+}
+
+#product-body .container {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+#product-body .section-a h3 {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  color: #101010;
+}
+
+.newarrival {
+  background: #f2b807;
+  width: 80px;
+  height: 28px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#product-body,
+.col-md-7 h2 {
+  text-decoration: none;
+  color: #555555;
+}
+
+.price {
+  float: right;
+  color: #101010;
+  font-size: 22px;
+}
+
+#product-body input {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  height: 33px;
+  text-align: center;
+  width: 30px;
+}
+
+#product-body .section-c .cartBtn {
+  float: right;
+  background: #101010;
+  color: whitesmoke;
+  font-size: 15px;
+  margin-left: 20px;
+  border-radius: 0px;
+}
+
+#product-body label {
+  color: gray;
+  font-weight: 500;
+}
+
+/*CATEGORY PAGE*/
