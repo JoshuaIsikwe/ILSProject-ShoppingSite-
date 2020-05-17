@@ -16,16 +16,63 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
     />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <title>ShopProduct</title>
+
     <link rel="stylesheet" href="../index.css" />
+    <title>ShopProduct</title>
   </head>
 
   <body id="product-body">
     <!--NAVIGATION BAR-->
+    <nav>
+      <ul>
+        <li class="logo">Elter Ego</li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+          <li><a href="index.html">Home</a></li>
+
+          <div class="dropdown">
+            <button class="dropbtn">Shop</button>
+            <div class="dropdown-content">
+              <a href="productCategory.html">T-Shirts</a>
+              <a href="#">Elter Hats</a>
+              <a href="#">Swimsuits</a>
+            </div>
+          </div>
+          <!--<li><a href="#">Shop</a></li>-->
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="signIn-Up.html">Sign In/Sign Up</a></li>
+
+          <div class="dropdown">
+            <button class="dropbtn">Account</button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Orders</a>
+              <a href="#">Returns/Exchanges</a>
+              <a href="#">Log Out</a>
+            </div>
+          </div>
+          <li>
+            <a class="cart-btn" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </div>
+
+        <div class="search-box">
+          <input class="search-txt" type="text" placeholder="Search..." />
+          <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </ul>
+    </nav>
 
     <!--PRODUCT SECTION-->
     <div class="container">
@@ -40,21 +87,21 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/images/greenT1.jpg"
+                  src="/images/warriorEnergy_rsz.png"
                   class="d-block w-100"
                   alt="First slide"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/images/greenT2.jpg"
+                  src="/images/warriorEnergy_rsz_wide2.jpg"
                   class="d-block w-100"
                   alt="Second slide"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/images/greenT3.jpg"
+                  src="/images/warriorEnergy_rsz_wide.jpg"
                   class="d-block w-100"
                   alt="Third slide"
                 />
@@ -103,13 +150,13 @@
           <!--PRODUCT DESCRIPTION SECTION-->
           <section class="section-b">
             <label class="description">Product Description:</label>
-            <ul>
+            <ul id="listOfdescript">
               <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
               <li>Assumenda facilis hic iusto dolor.</li>
               <li>quidem inventore totam omnis odit?</li>
             </ul>
-            <p><label>Availability:</label> In Stock</p>
-            <p><label>Brand:</label> Elter Ego</p>
+            <p><label class="descrLabel">Availability:</label> In Stock</p>
+            <p><label class="descrLabel">Brand:</label> Elter Ego</p>
           </section>
 
           <!--QUANTITY/SIZE/CART SECTION-->
@@ -124,7 +171,7 @@
               </select>
             </div>
             <label for="text">Quantity: </label>
-            <input type="text" value="1" />
+            <input class="quantity" type="text" value="1" />
             <a href="#" class="btn btn-default cartBtn">
               ADD TO CART
             </a>

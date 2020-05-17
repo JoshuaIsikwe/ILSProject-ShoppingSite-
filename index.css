@@ -484,69 +484,73 @@ nav ul li.btn span.show:before {
 /*HOME PAGE*/
 
 /*ABOUT PAGE*/
+.about-body {
+  font-family: "Montserrat", sans-serif;
+}
 .about-page {
   text-align: center;
-  background-color: #f2b807;
+}
+
+div.description {
+  background: #101010;
+  padding: 50px;
 }
 
 .about-header {
-  height: 400px;
-  background: whitesmoke;
   position: relative;
 }
 
-#about-title {
-  position: absolute;
-  color: #222222;
-  font-family: "Poppins";
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.about-header h1 {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 32px;
 }
 
-.about-content,
-#delivery-info,
-#about-body {
-  margin: auto;
+.about-content {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
   width: 75%;
-  background-color: whitesmoke;
 }
 
 #tee-pic,
 .card img {
+  padding-bottom: 16px;
   width: 100%;
 }
 
-.about-content p,
-h3 {
-  font-family: "Poppins";
-  font-weight: 300;
-  color: #111;
-  width: 55%;
+.about-content p {
+  font-weight: 500;
+  text-align: center;
+  width: 88%;
+  color: whitesmoke;
   margin: auto;
+  font-size: 22px;
 }
 
-#blockquote {
-  font-family: "playfair display";
-  font-style: italic;
-  font-size: 24px;
-  padding: 30px 20px;
+div.delivery-info {
+  background-color: #f2b807;
+  padding: 50px;
+}
 
-  border: 1px rgba(0, 0, 0, 0.1);
+.delivery-info p {
+  color: #101010;
+}
+.delivery-info h1 {
+  font-weight: bolder;
+  color: #101010;
 }
 
 #truck,
 #card-icon {
   font-size: 100px;
-  padding-top: 100px;
-  color: #222222;
+  color: #101010;
 }
 
 /*CONTACT PAGE*/
 #contact-body .contact-section {
-  background-color: #eaeaea;
   color: #101010;
-  font-family: "Poppins";
+  font-family: "Montserrat", sans-serif;
   padding: 40px;
   margin: auto;
   width: 80%;
@@ -561,9 +565,11 @@ h3 {
 
 #contact-body .contact-form-text {
   display: block;
-  width: 70%;
+  width: 60%;
   box-sizing: border-box;
   margin: 16px 0;
+  margin-left: auto;
+  margin-right: auto;
   border: 0;
   background: #222222;
   padding: 20px 40px;
@@ -582,15 +588,16 @@ textarea.contact-form-text {
 .contact-form-btn {
   border: 0;
   background-color: #f2b807;
-  color: whitesmoke;
   padding: 12px 50px;
   border-radius: 1px;
   cursor: pointer;
   transition: 0.5s;
   color: #101010;
+  font-size: large;
 }
 .contact-form-btn:hover {
-  background-color: #222222;
+  background-color: #101010;
+  color: whitesmoke;
 }
 
 /*PRODUCT PAGE*/
@@ -617,7 +624,7 @@ textarea.contact-form-text {
   font-size: 16px;
 }
 
-#product-body ul li {
+.section-b ul li {
   list-style: none;
 }
 
@@ -655,7 +662,7 @@ textarea.contact-form-text {
   font-size: 22px;
 }
 
-#product-body input {
+.section-c input {
   border: 1px solid #ccc;
   font-weight: bold;
   height: 33px;
@@ -675,6 +682,9 @@ textarea.contact-form-text {
 #product-body label {
   color: gray;
   font-weight: 500;
+}
+select {
+  width: 100px;
 }
 
 /*CATEGORY PAGE*/
