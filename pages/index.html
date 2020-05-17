@@ -50,7 +50,15 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="signIn-Up.html">Sign In/Sign Up</a></li>
-          <li><a href="#">Account</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Account</button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Orders</a>
+              <a href="#">Returns/Exchanges</a>
+              <a href="#">Log Out</a>
+            </div>
+            </div>
             <li>
               <a class="cart-btn" href="#">
                 <i class="fas fa-shopping-cart"></i>
@@ -78,7 +86,9 @@
         </h1>
         <p>A new collection of t-shirts is now available</p>
       </div>
-      <button onclick='window.location.href="productPage.html"' class="btn">SHOP NOW</button>
+      <button onclick='window.location.href="productPage.html"' class="btn">
+        SHOP NOW
+      </button>
     </header>
 
     <!--MAIN AREA-->
@@ -86,79 +96,82 @@
       <!--SECTION A-->
       <section id="section-a" class="grid">
         <div class="section-title">
-            <h2>SHOP OUR COLLECTION</h2>
-          </div>
-          <div class="row">
-            <!--CATEGORY 1-->
-            <div class="col-md-4">
-              <div class="categoryGrid">
-                <div class="categoryImage">
-                  <a href="">
-                    <img src="/images/egyptianT.jpg" alt="" class="pic-1" />
-                  </a>
-                </div>
-                <div class="categoryContent">
-                  <h3 class="category-title">
-                    <a href="productCategory.html">
-                      T-Shirts
-                    </a>
-                  </h3>
-                </div>
+          <h2>SHOP OUR COLLECTION</h2>
+        </div>
+        <div class="row">
+          <!--CATEGORY 1-->
+          <div class="col-md-4">
+            <div class="categoryGrid">
+              <div class="categoryImage">
+                <a href="">
+                  <img src="/images/egyptianT.jpg" alt="" class="pic-1" />
+                </a>
               </div>
-            </div>
-            <!--CATEGORY 2-->
-            <div class="col-md-4">
-              <div class="categoryGrid">
-                <div class="categoryImage">
-                  <a href="">
-                    <img src="/images/sunhat.jpg" alt="" class="pic-1" />
+              <div class="categoryContent">
+                <h3 class="category-title">
+                  <a href="productCategory.html">
+                    T-Shirts
                   </a>
-                </div>
-                <div class="categoryContent">
-                  <h3 class="category-title">
-                    <a href="">
-                      Elter Hats
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <!--CATEGORY 3-->
-            <div class="col-md-4">
-              <div class="categoryGrid">
-                <div class="categoryImage">
-                  <a href="">
-                    <img src="/images/swimsuitblk.jpg" alt="" class="pic-1" />
-                  </a>
-                </div>
-                <div class="categoryContent">
-                  <h3 class="category-title">
-                    <a href="">
-                      Swimsuits
-                    </a>
-                  </h3>
-                </div>
+                </h3>
               </div>
             </div>
           </div>
+          <!--CATEGORY 2-->
+          <div class="col-md-4">
+            <div class="categoryGrid">
+              <div class="categoryImage">
+                <a href="">
+                  <img src="/images/sunhat.jpg" alt="" class="pic-1" />
+                </a>
+              </div>
+              <div class="categoryContent">
+                <h3 class="category-title">
+                  <a href="">
+                    Elter Hats
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!--CATEGORY 3-->
+          <div class="col-md-4">
+            <div class="categoryGrid">
+              <div class="categoryImage">
+                <a href="">
+                  <img src="/images/swimsuitblk.jpg" alt="" class="pic-1" />
+                </a>
+              </div>
+              <div class="categoryContent">
+                <h3 class="category-title">
+                  <a href="">
+                    Swimsuits
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      
+
       <!--SECTION B-->
       <section id="section-b" class="grid">
         <div class="box">
           <div class="image">
             <a href="">
-              <img src="/images/popUpT2.jpg" alt=""/>
+              <img src="/images/popUpT2.jpg" alt="" />
             </a>
           </div>
-            <div class="content-text">
-              <h2>OUR LATEST POP UP SHOPS</h2>
+          <div class="content-text">
+            <h2>OUR LATEST POP UP SHOPS</h2>
             <p>
-              Find out when and where our latest clothing collections will be launched. We open a popup shop every time we create NEW Elter Ego gear. Click below to find out where you can get your new Elter swag.
+              Find out when and where our latest clothing collections will be
+              launched. We open a popup shop every time we create NEW Elter Ego
+              gear. Click below to find out where you can get your new Elter
+              swag.
             </p>
             <a href="#" class="btn">See More</a>
-            </div>
           </div>
+        </div>
       </section>
     </main>
 
