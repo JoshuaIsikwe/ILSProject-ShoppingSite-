@@ -60,6 +60,7 @@ nav {
   border: 1px solid #000;
   border-left: none;
   border-right: none;
+  min-height: 40px;
 }
 nav ul {
   display: flex;
@@ -154,7 +155,6 @@ nav ul li.btn span.show:before {
 /*Formatting the Search Box*/
 .search-box {
   background: #101010;
-  height: 40px;
   border-radius: 40px;
   padding: 10px;
   border: 1px solid #f2b807;
@@ -163,6 +163,7 @@ nav ul li.btn span.show:before {
 .search-box:hover > .search-txt {
   width: 240px;
   padding: 0 6px;
+  text-decoration: none;
 }
 .search-box:hover > .search-btn {
   background: none;
@@ -178,6 +179,7 @@ nav ul li.btn span.show:before {
   justify-content: center;
   align-items: center;
   transition: 0.4s;
+  text-decoration: none;
 }
 
 .search-txt {
@@ -483,7 +485,6 @@ nav ul li.btn span.show:before {
 
 /*HOME PAGE*/
 
-<<<<<<< HEAD
 #shopNow-carousel .shop-img {
   position: absolute;
   background: url(./images/Elter-Ego-Logo.jpg);
@@ -566,22 +567,11 @@ div.description {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .about-content p {
   font-weight: 500;
   text-align: center;
-  width: 88%;
+  padding: 16px;
   color: whitesmoke;
-=======
-.about-content p,
-.contact-section h3 {
-  font-family: "Poppins";
-  font-weight: 300;
-  color: #111;
-  width: 55%;
->>>>>>> f2fdc514c44f45b0aaf3bbe2bb09bc13ce56c452
-  margin: auto;
-  font-size: 22px;
 }
 
 div.delivery-info {
@@ -603,7 +593,6 @@ div.delivery-info {
   color: #101010;
 }
 
-<<<<<<< HEAD
 /*Contact*/
 .contact-main {
   padding-bottom: 100px;
@@ -611,16 +600,11 @@ div.delivery-info {
 .contact-section {
   background-color: whitesmoke;
   color: #111;
-=======
+}
 /*CONTACT PAGE*/
 #contact-body .contact-section {
   color: #101010;
-<<<<<<< HEAD
   font-family: "Montserrat", sans-serif;
-=======
->>>>>>> db53704bc72657714475f904116c1f16e1a0ca02
-  font-family: "Poppins";
->>>>>>> f2fdc514c44f45b0aaf3bbe2bb09bc13ce56c452
   padding: 40px;
   margin: auto;
   width: 80%;
@@ -628,17 +612,13 @@ div.delivery-info {
   border-radius: 50px;
 }
 
-<<<<<<< HEAD
 .border {
   width: 100px;
   height: 10px;
-  background-color: #;
+  background-color: #101010;
   margin: 40px auto;
 }
 .contact-form {
-=======
-#contact-body .contact-form {
->>>>>>> db53704bc72657714475f904116c1f16e1a0ca02
   max-width: 600px;
   margin: 40px auto;
   padding: 0 10px;
@@ -649,13 +629,10 @@ div.delivery-info {
   display: block;
   width: 60%;
   box-sizing: border-box;
-<<<<<<< HEAD
   margin: 16px 0;
   margin-left: auto;
   margin-right: auto;
-=======
   margin: 16px auto;
->>>>>>> f2fdc514c44f45b0aaf3bbe2bb09bc13ce56c452
   border: 0;
   background: #222222;
   padding: 20px 40px;
@@ -663,13 +640,11 @@ div.delivery-info {
   transition: 0.5s;
 }
 
-<<<<<<< HEAD
 .contact-form-text:focus {
   box-shadow: 0 0 10px 4px #f2b807;
-=======
+}
 #contact-body .contact-form-text:focus {
   box-shadow: 0 0 10px 4px whitesmoke;
->>>>>>> db53704bc72657714475f904116c1f16e1a0ca02
 }
 
 textarea.contact-form-text {
@@ -679,29 +654,20 @@ textarea.contact-form-text {
 .contact-form-btn {
   border: 0;
   background-color: #f2b807;
-<<<<<<< HEAD
-=======
   color: #222222;
->>>>>>> f2fdc514c44f45b0aaf3bbe2bb09bc13ce56c452
   padding: 12px 50px;
   border-radius: 1px;
   cursor: pointer;
   transition: 0.5s;
-<<<<<<< HEAD
   padding-bottom: 10px;
-=======
   color: #101010;
-<<<<<<< HEAD
   font-size: large;
 }
 .contact-form-btn:hover {
   background-color: #101010;
-=======
->>>>>>> db53704bc72657714475f904116c1f16e1a0ca02
 }
 .contact-form-btn:hover {
   background-color: #222222;
->>>>>>> f2fdc514c44f45b0aaf3bbe2bb09bc13ce56c452
   color: whitesmoke;
 }
 
