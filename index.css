@@ -532,11 +532,10 @@ button:hover {
 }
 
 /*ABOUT PAGE*/
-.about-body {
-  font-family: "Montserrat", sans-serif;
-}
+
 .about-page {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 div.description {
@@ -602,7 +601,7 @@ div.delivery-info {
   color: #111;
 }
 /*CONTACT PAGE*/
-#contact-body .contact-section {
+.contact-section {
   color: #101010;
   font-family: "Montserrat", sans-serif;
   padding: 40px;
@@ -625,7 +624,7 @@ div.delivery-info {
   overflow: hidden;
 }
 
-#contact-body .contact-form-text {
+.contact-form-text {
   display: block;
   width: 60%;
   box-sizing: border-box;
@@ -643,7 +642,7 @@ div.delivery-info {
 .contact-form-text:focus {
   box-shadow: 0 0 10px 4px #f2b807;
 }
-#contact-body .contact-form-text:focus {
+.contact-form-text:focus {
   box-shadow: 0 0 10px 4px whitesmoke;
 }
 
@@ -656,7 +655,7 @@ textarea.contact-form-text {
   background-color: #f2b807;
   color: #222222;
   padding: 12px 50px;
-  border-radius: 1px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
   padding-bottom: 10px;
